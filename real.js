@@ -28,7 +28,7 @@ function background(backgroundAddress, leftPosition, bottomPosition, leftIndenta
     }
 }
 
-let groundHeight = window.innerHeight * 0.6; // Total height of the grass within the viewport
+let groundHeight = window.innerHeight * 0.64; // Total height of the grass within the viewport
 let skyHeight = window.innerHeight - groundHeight; // The remmaining space of the viewport
 
 background('assets/grass.png', '0', '0', window.innerWidth / 100, groundHeight / 100); // Divided by 100 to make it a factor of the width and height of the images
