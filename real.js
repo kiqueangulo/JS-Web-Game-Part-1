@@ -53,8 +53,8 @@ function move(element) {
                 y -= 1;
             };
 
-            if (x <= 0 || x === window.innerWidth) {
-                element.style.left = '0px';
+            if (x <= 0) {
+                x = 0;
             }
 
             element.style.left = x + 'px';
@@ -151,11 +151,11 @@ function background(backgroundAddress, leftPosition, bottomPosition, leftIndenta
             newImage(backgroundAddress, leftPosition + w * 100, bottomPosition + h * 100);
         }
     }
-}
+};
 
 let groundHeight = window.innerHeight * 0.64;
 let skyHeight = window.innerHeight - groundHeight;
 
 background('assets/grass.png', '0', '0', window.innerWidth / 100, groundHeight / 100);
 
-background('assets/sky.png', '0', groundHeight, window.innerWidth / 100, skyHeight / 100); */
+background('assets/sky.png', '0', groundHeight, window.innerWidth / 100, skyHeight / 100);*/
